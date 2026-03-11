@@ -1,5 +1,7 @@
 # Sorting Visualizer
 
+**[🚀 Play the Live Demo Here!](https://aryan1196.github.io/sorting_visualizer/)**
+
 A stunning, real-time web application that visualizes how various sorting algorithms perform concurrently. Built with a modern dark theme and glassmorphism UI, this tool serves both as a beautiful demonstration of computer science concepts and an interactive educational resource.
 
 ## Features
