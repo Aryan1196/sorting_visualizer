@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sort Explained</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header class="nav-header">
+        <a href="../index.html" class="back-btn">← Back to Visualizer</a>
+    </header>
+
+    <main>
+        <div class="article-container">
+            <h1>Selection Sort</h1>
+            
+            <p><strong>Selection Sort</strong> is an in-place comparison sorting algorithm. It divides the input list into two parts: a sorted sublist of items which is built up from left to right at the front of the list, and a sublist of the remaining unsorted items that occupy the rest of the list.</p>
+            <p>The algorithm proceeds by finding the smallest element in the unsorted sublist, exchanging (swapping) it with the leftmost unsorted element, and moving the sublist boundaries one element to the right.</p>
+
+            <img src="../images/selection_sort_diagram.png" class="algo-diagram" alt="Selection Sort visual representation">
+
+            <h2>Complexity</h2>
+            <table class="complexity-table">
+                <tr>
+                    <th>Best Time</th>
+                    <th>Average Time</th>
+                    <th>Worst Time</th>
+                    <th>Space</th>
+                </tr>
+                <tr>
+                    <td>O(N²)</td>
+                    <td>O(N²)</td>
+                    <td>O(N²)</td>
+                    <td>O(1)</td>
+                </tr>
+            </table>
+
+            <h2>How It Works (Step-by-Step)</h2>
+            <ol>
+                <li>Assume the first unsorted element is the minimum.</li>
+                <li>Iterate through the rest of the unsorted array to find if there is an element smaller than the current minimum.</li>
+                <li>If a smaller element is found, designate it as the new minimum.</li>
+                <li>Once the end of the array is reached, swap the minimum element found with the first unsorted element.</li>
+                <li>The first unsorted element is now considered part of the sorted sublist. Repeat steps 1-4 until the array is fully sorted.</li>
+            </ol>
+        </div>
+    </main>
+</body>
+</html>
+

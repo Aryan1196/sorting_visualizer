@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heap Sort Explained</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header class="nav-header">
+        <a href="../index.html" class="back-btn">← Back to Visualizer</a>
+    </header>
+
+    <main>
+        <div class="article-container">
+            <h1>Heap Sort</h1>
+            
+            <p><strong>Heap Sort</strong> is a comparison-based sorting technique based on a Binary Heap data structure. It is similar to Selection Sort where we first find the maximum element and place it at the end. We repeat the same process for the remaining elements.</p>
+            <p>Heap Sort is widely known for its excellent efficiency and consistent performance. Since it modifies the array in-place, it does not require additional memory like Merge Sort does.</p>
+            
+            <img src="../images/heap_sort_diagram.png" class="algo-diagram" alt="Heap Sort visual representation">
+
+            <h2>Complexity</h2>
+            <table class="complexity-table">
+                <tr>
+                    <th>Best Time</th>
+                    <th>Average Time</th>
+                    <th>Worst Time</th>
+                    <th>Space</th>
+                </tr>
+                <tr>
+                    <td>O(N log N)</td>
+                    <td>O(N log N)</td>
+                    <td>O(N log N)</td>
+                    <td>O(1)</td>
+                </tr>
+            </table>
+
+            <h2>How It Works (Step-by-Step)</h2>
+            <ol>
+                <li><strong>Build a Max Heap:</strong> Rearrange the given array into a Max Heap (a complete binary tree where every parent node is greater than its children).</li>
+                <li>At this point, the largest item is stored at the root of the heap (the first element in the array).</li>
+                <li><strong>Extract the Maximum:</strong> Swap the root element with the last element of the heap, effectively moving the largest element to its sorted position at the end of the array.</li>
+                <li>Reduce the heap size by 1 (ignoring the freshly placed sorted element).</li>
+                <li><strong>Heapify:</strong> Since the new root might violate the Max Heap property, "heapify" the root down to restore the property.</li>
+                <li>Repeat steps 3-5 until the size of the heap is greater than 1.</li>
+            </ol>
+        </div>
+    </main>
+</body>
+</html>
+

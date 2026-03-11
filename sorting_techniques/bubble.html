@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Sort Explained</title>
+    <!-- Modern Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header class="nav-header">
+        <a href="../index.html" class="back-btn">← Back to Visualizer</a>
+    </header>
+
+    <main>
+        <div class="article-container">
+            <h1>Bubble Sort</h1>
+            
+            <p><strong>Bubble Sort</strong> is one of the simplest sorting algorithms. It works by repeatedly stepping through the list, comparing adjacent elements, and swapping them if they are in the wrong order. The pass through the list is repeated until the list is sorted.</p>
+            <p>It gets its name because smaller elements "bubble" to the top of the list while larger elements sink to the bottom (like bubbles in a glass of soda).</p>
+
+            <img src="../images/bubble_sort_diagram.png" class="algo-diagram" alt="Bubble Sort visual representation">
+
+            <h2>Complexity</h2>
+            <table class="complexity-table">
+                <tr>
+                    <th>Best Time</th>
+                    <th>Average Time</th>
+                    <th>Worst Time</th>
+                    <th>Space</th>
+                </tr>
+                <tr>
+                    <td>O(N)</td>
+                    <td>O(N²)</td>
+                    <td>O(N²)</td>
+                    <td>O(1)</td>
+                </tr>
+            </table>
+
+            <h2>How It Works (Step-by-Step)</h2>
+            <ol>
+                <li>Start at the beginning of the array.</li>
+                <li>Compare the first two elements. If the first is greater than the second, swap them.</li>
+                <li>Move to the next pair of elements, compare, and swap if necessary.</li>
+                <li>Continue this process until reaching the end of the array. At this point, the largest element is guaranteed to be at the very end.</li>
+                <li>Repeat steps 1-4 for the remaining unsorted elements (ignoring the sorted end of the array) until no more swaps are needed.</li>
+            </ol>
+        </div>
+    </main>
+</body>
+</html>
+

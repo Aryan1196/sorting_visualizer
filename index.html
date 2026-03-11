@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stunning Sorting Visualizer</title>
+    <!-- Modern Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Sorting Visualizer</h1>
+        <div class="controls-wrapper">
+            <div class="settings">
+                <div class="setting-group">
+                    <label for="array-size">Size</label>
+                    <input type="range" id="array-size" min="10" max="60" value="40">
+                </div>
+                <div class="setting-group">
+                    <label for="sort-speed">Speed</label>
+                    <input type="range" id="sort-speed" min="10" max="500" value="50">
+                </div>
+            </div>
+            <div class="actions">
+                <button id="generate-btn" class="primary-btn">Generate New Array</button>
+                <button id="race-btn" class="primary-btn" style="background-color: var(--bar-sorted);">Start Sort Race!</button>
+            </div>
+        </div>
+        
+        <div class="color-legend">
+            <div class="legend-item">
+                <div class="color-box box-default"></div>
+                <span>Unsorted</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box box-compare"></div>
+                <span>Comparing</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box box-swap"></div>
+                <span>Swapping/Pivot</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box box-sorted"></div>
+                <span>Sorted</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <div class="visualizer-box">
+                <a href="sorting_techniques/bubble.html" title="Click to learn how Bubble Sort works"><h2>Bubble Sort</h2></a>
+                <div id="container-bubble" class="array-container"></div>
+            </div>
+            <div class="visualizer-box">
+                <a href="sorting_techniques/selection.html" title="Click to learn how Selection Sort works"><h2>Selection Sort</h2></a>
+                <div id="container-selection" class="array-container"></div>
+            </div>
+            <div class="visualizer-box">
+                <a href="sorting_techniques/insertion.html" title="Click to learn how Insertion Sort works"><h2>Insertion Sort</h2></a>
+                <div id="container-insertion" class="array-container"></div>
+            </div>
+            <div class="visualizer-box">
+                <a href="sorting_techniques/merge.html" title="Click to learn how Merge Sort works"><h2>Merge Sort</h2></a>
+                <div id="container-merge" class="array-container"></div>
+            </div>
+            <div class="visualizer-box">
+                <a href="sorting_techniques/quick.html" title="Click to learn how Quick Sort works"><h2>Quick Sort</h2></a>
+                <div id="container-quick" class="array-container"></div>
+            </div>
+            <div class="visualizer-box">
+                <a href="sorting_techniques/heap.html" title="Click to learn how Heap Sort works"><h2>Heap Sort</h2></a>
+                <div id="container-heap" class="array-container"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

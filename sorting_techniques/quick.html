@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Sort Explained</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header class="nav-header">
+        <a href="../index.html" class="back-btn">← Back to Visualizer</a>
+    </header>
+
+    <main>
+        <div class="article-container">
+            <h1>Quick Sort</h1>
+            
+            <p><strong>Quick Sort</strong> is an efficient, in-place, divide-and-conquer sorting algorithm. It is usually faster in practice than other O(N log N) algorithms such as Merge Sort when operated on arrays, thanks to its excellent cache locality.</p>
+            <p>The core of Quick Sort is the "partitioning" step: picking an element as a "pivot" and reordering the array so that all elements smaller than the pivot come before it, and all elements larger come after it.</p>
+            
+            <img src="../images/quick_sort_diagram.png" class="algo-diagram" alt="Quick Sort visual representation">
+
+            <h2>Complexity</h2>
+            <table class="complexity-table">
+                <tr>
+                    <th>Best Time</th>
+                    <th>Average Time</th>
+                    <th>Worst Time</th>
+                    <th>Space</th>
+                </tr>
+                <tr>
+                    <td>O(N log N)</td>
+                    <td>O(N log N)</td>
+                    <td>O(N²)</td>
+                    <td>O(log N)</td>
+                </tr>
+            </table>
+
+            <h2>How It Works (Step-by-Step)</h2>
+            <ol>
+                <li>Choose an element from the array to be the "pivot" (e.g., the last element, the first, or a random element).</li>
+                <li><strong>Partitioning:</strong> Reorder the array such that all elements with values less than the pivot come before the pivot, and all elements with values greater than the pivot come after it.</li>
+                <li>After partitioning, the pivot is now in its final sorted position.</li>
+                <li>Recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values.</li>
+                <li>The recursion bottoms out when the array has zero or one element, which are inherently sorted.</li>
+            </ol>
+        </div>
+    </main>
+</body>
+</html>
+

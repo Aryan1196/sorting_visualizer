@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Sort Explained</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header class="nav-header">
+        <a href="../index.html" class="back-btn">← Back to Visualizer</a>
+    </header>
+
+    <main>
+        <div class="article-container">
+            <h1>Merge Sort</h1>
+            
+            <p><strong>Merge Sort</strong> is an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort. It is a divide-and-conquer algorithm that was invented by John von Neumann in 1945.</p>
+            <p>The algorithm recursively divides the list into halves, sorts those halves, and then merges them back together. Because of its reliable O(N log N) performance, it is often used as the default sorting algorithm in many standard language libraries.</p>
+            
+            <img src="../images/merge_sort_diagram.png" class="algo-diagram" alt="Merge Sort visual representation">
+
+            <h2>Complexity</h2>
+            <table class="complexity-table">
+                <tr>
+                    <th>Best Time</th>
+                    <th>Average Time</th>
+                    <th>Worst Time</th>
+                    <th>Space</th>
+                </tr>
+                <tr>
+                    <td>O(N log N)</td>
+                    <td>O(N log N)</td>
+                    <td>O(N log N)</td>
+                    <td>O(N)</td>
+                </tr>
+            </table>
+
+            <h2>How It Works (Step-by-Step)</h2>
+            <ol>
+                <li><strong>Divide:</strong> Divide the unsorted list into n sublists, each containing one element (a list of one element is considered sorted).</li>
+                <li><strong>Conquer:</strong> Repeatedly merge sublists to produce new sorted sublists until there is only one sorted list remaining. This will be the sorted list.</li>
+                <li>When merging two sublists, compare the first element of both sublists. Take the smaller of the two and place it into the new merged array.</li>
+                <li>Repeat this comparison until one sublist is empty, then append the remaining elements of the other sublist to the merged array.</li>
+            </ol>
+        </div>
+    </main>
+</body>
+</html>
+
