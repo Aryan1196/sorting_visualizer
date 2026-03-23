@@ -66,8 +66,4 @@ Because this is a static website, you don't need to install Node.js, Python, or 
 
 Alternatively, if you use VS Code, you can use the "Live Server" extension to run the project.
 
-## Hosting Online
 
-You can easily host this project for free using platforms like:
-- **GitHub Pages:** Commit the code to a public repository and enable Pages in the settings.
-- **Netlify Drop:** Drag and drop the project folder onto the Netlify Drop webpage to get an instant live link.
